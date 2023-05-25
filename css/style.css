@@ -3,6 +3,10 @@ body {
 }
 
 .customer-reviews {
+  background-color: #fff;
+  background-image: url(../img/bg-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 70px 0;
 }
 .customer-reviews__title {
@@ -269,6 +273,9 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .customer-reviews {
+    background-image: none;
+  }
   .reviews-item__footer {
     gap: 10px;
     grid-template-columns: 1fr;
