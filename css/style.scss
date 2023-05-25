@@ -1,0 +1,318 @@
+body {
+  // font-family: 'Golos Text', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+// слайдер отзывы
+.customer-reviews {
+  padding: 70px 0;
+
+  &__title {
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 48px;
+
+    /* Blue */
+
+    color: #033b6a;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper,
+  .swiper-container {
+    overflow: initial;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-bottom: 40px;
+  }
+
+  .swiper-slide {
+  }
+
+  &__buttons {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 188px 188px;
+    margin-left: auto;
+    max-width: max-content;
+    .button {
+      height: 48px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Golos Text";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1;
+      color: #ffffff;
+      padding: 12px 20px;
+      background-color: #033b6a;
+
+      &--red {
+        background-color: #c8153b;
+      }
+    }
+  }
+  &__footer {
+    display: grid;
+    gap: 32px;
+    align-items: center;
+    grid-template-columns: 8fr 4fr;
+  }
+}
+
+.statistic {
+  display: grid;
+  align-items: center;
+  gap: 24px;
+  grid-template-columns: 48px auto 1fr;
+
+  &__number {
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #2a2a2a;
+  }
+  &__text {
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #57575a;
+    span {
+      margin-bottom: 8px;
+      display: block;
+    }
+  }
+  &__logo {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #033b6a;
+
+  svg {
+    pointer-events: none;
+  }
+  &:after {
+    display: none;
+  }
+}
+
+.swiper-button-next {
+  right: -24px;
+}
+.swiper-button-prev {
+  left: -24px;
+}
+
+.reviews-item {
+  background: #ffffff;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
+  padding: 32px;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #57575a;
+  border-top: 4px solid #033b6a;
+  display: block;
+  &__header {
+    display: grid;
+    align-items: center;
+    gap: 16px;
+    grid-template-columns: 48px 1fr;
+    margin-bottom: 14px;
+  }
+  &__icon {
+    border-radius: 50%;
+    background-color: #c8153b;
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+  }
+  &__name {
+    display: block;
+    margin: 0;
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    color: #033b6a;
+    margin-right: auto;
+  }
+  &__text {
+    margin: 0;
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #57575a;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  &__footer {
+    display: grid;
+    gap: 16px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+  time {
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #2a2a2a;
+    margin-right: auto;
+  }
+}
+
+.stars-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(5, 25px);
+
+  li {
+    filter: sepia(1);
+    opacity: 0.3;
+
+    &.active {
+      filter: none;
+      opacity: 1;
+    }
+  }
+}
+
+// костыли и велосипеды
+.elementor-4938 .elementor-element.elementor-element-49a7a00 .elementor-heading-title {
+  color: #033b6a;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Golos Text";
+  line-height: 120%;
+}
+
+.elementor-field-option label {
+  font-family: "Golos Text";
+}
+.elementor-widget-container span {
+  font-family: "Golos Text";
+  text-align: left;
+  white-space: initial;
+}
+
+// АДПТИВЧИК
+
+@media (max-width: 1024px) {
+  .customer-reviews {
+    .swiper-button-next {
+      right: -10px;
+    }
+    .swiper-button-prev {
+      left: -10px;
+    }
+    // .swiper-wrapper {
+    //   margin: 0 48px;
+    // }
+  }
+  .wrapper {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .customer-reviews {
+    padding: 35px 0;
+}
+  .customer-reviews__footer {
+    gap: 16px;
+    grid-template-columns: 1fr;
+  }
+  .customer-reviews__buttons {
+    margin-left: initial;
+}
+}
+
+@media (max-width: 768px) {
+  .reviews-item__footer {
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+  .customer-reviews__title {
+    font-size: 34px;
+    margin-bottom: 24px;
+}
+}
+
+@media (max-width: 465px) {
+  .customer-reviews__buttons {
+    gap: 16px;
+    grid-template-columns: 1fr;
+    margin-left: initial;
+    max-width: 100%;
+
+    .button {
+      max-width: 100%;
+      width: 100%;
+    }
+}
+}
