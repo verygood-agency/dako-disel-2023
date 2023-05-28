@@ -125,9 +125,9 @@ body {
 .swiper-button-prev svg {
   pointer-events: none;
 }
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  display: none;
+.customer-reviews .swiper-button-next:after,
+.customer-reviews .swiper-button-prev:after {
+  display: none !important;
 }
 
 .swiper-button-next {

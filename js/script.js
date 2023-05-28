@@ -7,10 +7,10 @@ var swiper = new Swiper(".customer-reviews .mySwiper", {
     prevEl: ".customer-reviews  .swiper-button-prev",
   },
   loop: true,
-  // pagination: {
-  //   el: ".customer-reviews  .swiper-pagination",
-  //   clickable: true,
-  // },
+  pagination: {
+    el: ".customer-reviews  .swiper-pagination",
+    clickable: true,
+  },
   breakpoints: {
     // when window width is >= 320px
     320: {
